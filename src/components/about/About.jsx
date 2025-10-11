@@ -8,7 +8,7 @@ export default function About() {
 				<img src={profileImg} className="about__img" alt="Profile photo." />
 				<figcaption className="about__caption">
 					<p>
-						I'm a web developer and designer based out of London, UK.
+						I'm a web developer and designer based out of Luxembourg.
 						I love building apps that solve real-world problems, and that are delightful to use.
 						My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.
 					</p>

@@ -1,8 +1,8 @@
 .project {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: minmax(50vw, 20rem);
-	gap: .5rem;
+    grid-template-rows: 45vw 1fr;
+	gap: 1rem;
 }
 
 .project__img {
