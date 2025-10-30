@@ -5,7 +5,7 @@ export default function Landing() {
 	return (
 		<Center h="100vh" maxH="700px">
 			<VStack w="11/12" maxW="2xl" textAlign="center" gap="6">
-				<Heading size="lg">
+				<Heading as="h1" size="lg">
 					<Highlight ignoreCase query="bastien winant" styles={{ color: "teal.600" }}>
 						Hi, I'm Bastien Winant
 					</Highlight>
