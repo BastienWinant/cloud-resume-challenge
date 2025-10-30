@@ -1,5 +1,6 @@
 import { ScrollArea } from "@chakra-ui/react"
 import Landing from "@/components/Landing.jsx"
+import About from "@/components/About.jsx"
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 			<ScrollArea.Viewport>
 				<ScrollArea.Content>
 					<Landing />
+					<About />
 				</ScrollArea.Content>
 			</ScrollArea.Viewport>
 			<ScrollArea.Scrollbar>
