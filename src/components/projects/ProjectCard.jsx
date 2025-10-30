@@ -1,16 +1,11 @@
-import { Button, Card, Image, Wrap, Badge, For } from "@chakra-ui/react"
+import { Button, Card, Image, Wrap, Badge, For, LinkBox, LinkOverlay } from "@chakra-ui/react"
 import { FaGithub } from "react-icons/fa6"
 import { FiExternalLink } from "react-icons/fi";
 
 
-export default function ProjectCard() {
-	const title = "Living room Sofa"
-	const description = "This sofa is perfect for modern tropical spaces, baroque inspired spaces."
-	const imgUrl = "https://images.unsplash.com/photo-1761833199030-3e2c34a76523"
-	const techStack = ["React", "TypeScript", "Tailwind CSS", "Recharts"]
-
+export default function ProjectCard({title, imgUrl, description, techStack, githubLink, demoLink}) {
 	return (
-		<Card.Root overflow="hidden">
+		<Card.Root overflow="hidden" rounded="2xl">
 			<Image
 				src={imgUrl}
 				alt="Project screenshot."
@@ -27,12 +22,18 @@ export default function ProjectCard() {
 				</Wrap>
 			</Card.Body>
 			<Card.Footer gap="2">
-				<Button variant="outline" size="sm">
-					<FaGithub /> Code
-				</Button>
-				<Button variant="solid" size="sm">
-					<FiExternalLink /> Live demo
-				</Button>
+				{githubLink && <LinkBox>
+					<Button variant="outline" size="sm" rounded="lg">
+						<FaGithub /> Code
+					</Button>
+					<LinkOverlay href={githubLink} target="_blank" />
+				</LinkBox>}
+				{demoLink && <LinkBox>
+					<Button variant="solid" size="sm" rounded="lg">
+						<FiExternalLink /> Live demo
+					</Button>
+					<LinkOverlay href={demoLink} target="_blank" />
+				</LinkBox>}
 			</Card.Footer>
 		</Card.Root>
 	)
