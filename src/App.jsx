@@ -2,6 +2,7 @@ import { ScrollArea } from "@chakra-ui/react"
 import Landing from "@/components/Landing.jsx"
 import About from "@/components/About.jsx"
 import Projects from "@/components/projects/Projects.jsx"
+import Footer from "@/components/Footer.jsx"
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 					<Landing />
 					<About />
 					<Projects />
+					<Footer />
 				</ScrollArea.Content>
 			</ScrollArea.Viewport>
 			<ScrollArea.Scrollbar>
