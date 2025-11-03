@@ -1,9 +1,13 @@
-import { VStack, Heading } from "@chakra-ui/react"
+import { Container, Center, Heading } from "@chakra-ui/react"
 
-export default function Header({children}) {
+export default function Header({ children }) {
 	return (
-		<VStack as="header">
-			<Heading as="h2" size="lg" fontWeight="medium">{children}</Heading>
-		</VStack>
+		<Container>
+			<Center>
+				<Heading as="h2" textTransform="capitalize">
+					{children}
+				</Heading>
+			</Center>
+		</Container>
 	)
 }

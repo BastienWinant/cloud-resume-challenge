@@ -1,37 +1,31 @@
 import Section from "@/components/section/index.js"
-import ProjectCard from "@/components/projects/ProjectCard.jsx"
-import { SimpleGrid, For } from "@chakra-ui/react"
-import projects from '@/assets/projects.json';
+import { SimpleGrid } from "@chakra-ui/react"
+import ProjectCard from "@/components/projects/ProjectCard.jsx";
 
 export default function Projects() {
 	return (
 		<Section>
-			<Section.Header>Featured Projects</Section.Header>
-			<Section.SubHeader>
-				Here are some of my recent projects that showcase my skills in web development.
-				Each project represents a unique challenge and learning experience.
-			</Section.SubHeader>
+			<Section.Header>featured projects</Section.Header>
 			<Section.Body>
-				<SimpleGrid
-					gap="6"
-					justifyItems="center"
-					minChildWidth="xs"
-				>
-					<For each={projects}>
-						{(item, index) => {
-							return (
-								<ProjectCard
-									key={index}
-									title={item.title}
-									description={item.description}
-									imgUrl={item.imgUrl}
-									techStack={item.techStack}
-									githubLink={item.githubLink}
-									demoLink={item.demoLink}
-								/>
-							)
-						}}
-					</For>
+				<SimpleGrid minChildWidth="xs" gap="5" maxW="6xl" mx="auto">
+					<ProjectCard
+						title="Color Scheme Generator"
+						description="Wep app that lets you generate, adjust, and save color schemes. It was built from Chakra UI component to focus on React context management and user authentication."
+						imgUrl="https://images.unsplash.com/photo-1761995912979-c3646524391b"
+						techStack={["React", "Firebase", "The Color API", "Chakra UI"]}
+					/>
+					<ProjectCard
+						title="Personal Dashboard"
+						description="A Chrome Extension that gives you an overview over the current time, how the weather is like and how Dogecoin is performing. Interacts with multiple APIs using async JS."
+						imgUrl="https://images.unsplash.com/photo-1761852281574-48d871a41ee4"
+						techStack={["React", "Firebase", "The Color API", "Chakra UI"]}
+					/>
+					<ProjectCard
+						title="Password Generator"
+						description="An app that generates random passwords based on a few user inputs, e.g. length, types of characters, etc. Built with HTML, CSS, and vanilla JavaScript."
+						imgUrl="https://images.unsplash.com/photo-1742268351289-8ef991675c79"
+						techStack={["React", "Firebase", "The Color API", "Chakra UI"]}
+					/>
 				</SimpleGrid>
 			</Section.Body>
 		</Section>

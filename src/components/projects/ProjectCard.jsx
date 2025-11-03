@@ -1,20 +1,17 @@
-import { Button, Card, Image, Wrap, Badge, For, LinkBox, LinkOverlay } from "@chakra-ui/react"
-import { FaGithub } from "react-icons/fa6"
-import { FiExternalLink } from "react-icons/fi";
+import { Button, Card, Image, For, Wrap, Badge } from "@chakra-ui/react"
 
 
-export default function ProjectCard({title, imgUrl, description, techStack, githubLink, demoLink}) {
+export default function ProjectCard({ title, description, imgUrl, techStack }) {
 	return (
-		<Card.Root overflow="hidden" rounded="2xl">
+		<Card.Root overflow="hidden">
 			<Image
 				src={imgUrl}
 				alt="Project screenshot."
-				fit="cover"
-				aspectRatio={{ base: 1.75 }}
+				aspectRatio={{ base: 1.5, md: 1.75}}
 			/>
 			<Card.Body gap="2">
 				<Card.Title>{title}</Card.Title>
-				<Card.Description lineClamp="3">{description}</Card.Description>
+				<Card.Description lineClamp={{ base: "2" }}>{description}</Card.Description>
 				<Wrap mt="4">
 					<For each={techStack}>
 						{(item, index) => <Badge key={index}>{item}</Badge>}
@@ -22,18 +19,8 @@ export default function ProjectCard({title, imgUrl, description, techStack, gith
 				</Wrap>
 			</Card.Body>
 			<Card.Footer gap="2">
-				{githubLink && <LinkBox>
-					<Button variant="outline" size="sm" rounded="lg">
-						<FaGithub /> Code
-					</Button>
-					<LinkOverlay href={githubLink} target="_blank" />
-				</LinkBox>}
-				{demoLink && <LinkBox>
-					<Button variant="solid" size="sm" rounded="lg">
-						<FiExternalLink /> Live demo
-					</Button>
-					<LinkOverlay href={demoLink} target="_blank" />
-				</LinkBox>}
+				<Button variant="solid">Buy now</Button>
+				<Button variant="ghost">Add to cart</Button>
 			</Card.Footer>
 		</Card.Root>
 	)

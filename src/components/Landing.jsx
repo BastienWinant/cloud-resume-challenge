@@ -1,24 +1,46 @@
-import { Center, ButtonGroup, Button, Heading, Highlight, VStack, Text } from "@chakra-ui/react"
-
+import {
+	Container,
+	Center,
+	VStack,
+	Heading,
+	Highlight,
+	Text,
+	ButtonGroup,
+	Button
+} from "@chakra-ui/react"
 
 export default function Landing() {
 	return (
-		<Center h="100vh">
-			<VStack w="11/12" maxW="2xl" textAlign="center" gap="6">
-				<Heading as="h1" size="lg">
-					<Highlight ignoreCase query="bastien winant" styles={{ color: "teal.600" }}>
-						Hi, I'm Bastien Winant
-					</Highlight>
-				</Heading>
-				<Text mb="3" fontSize="md" color="fg.muted">
-					Passionate about building clean, user-friendly web applications.
-					I love turning ideas into reality through code and creating experiences that make a difference.
-				</Text>
-				<ButtonGroup>
-					<Button variant="solid" size="sm" rounded="lg" w="42">view my work</Button>
-					<Button variant="outline" size="sm" rounded="lg" w="42">get in touch</Button>
-				</ButtonGroup>
-			</VStack>
-		</Center>
+		<Container
+			h="100vh"
+			py={{ base: 4, md: 6, lg: 8 }}
+			borderWidth="thin"
+		>
+			<Center h="full" bg="bg.panel">
+				<VStack maxW="2xl" gap="4">
+					<Heading
+						as="h1"
+						size={{ base: "xl", md: "2xl" }}
+						fontWeight="medium"
+					>
+						<Highlight
+							ignoreCase
+							query="bastien winant"
+							styles={{ color: "teal.600" }}
+						>
+							Hi, I'm Bastien Winant
+						</Highlight>
+						</Heading>
+					<Text textAlign="center">
+						Passionate about building clean, user-friendly web applications.
+						I love turning ideas into reality through code and creating experiences that make a difference.
+					</Text>
+					<ButtonGroup mt="4">
+						<Button w="32">view my work</Button>
+						<Button w="32" variant="outline">get in touch</Button>
+					</ButtonGroup>
+				</VStack>
+			</Center>
+		</Container>
 	)
 }
