@@ -1,13 +1,16 @@
 import Section from "@/components/section/index.js"
 import { SimpleGrid } from "@chakra-ui/react"
-import ProjectCard from "@/components/projects/ProjectCard.jsx";
+import ProjectCard from "@/components/projects/ProjectCard.jsx"
+import { useNavContext } from "@/contexts/navContext/NavContext.jsx"
 
 export default function Projects() {
+	const { projectsRef } = useNavContext()
+
 	return (
-		<Section>
+		<Section ref={projectsRef}>
 			<Section.Header>featured projects</Section.Header>
 			<Section.Body>
-				<SimpleGrid minChildWidth="xs" gap="5" maxW="6xl" mx="auto">
+				<SimpleGrid columns={[1, null, 3]} gap={{ base: "4", md: 3, lg: 4 }} maxW="6xl" mx="auto">
 					<ProjectCard
 						title="Color Scheme Generator"
 						description="Wep app that lets you generate, adjust, and save color schemes. It was built from Chakra UI component to focus on React context management and user authentication."
