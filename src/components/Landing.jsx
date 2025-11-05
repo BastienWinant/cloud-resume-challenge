@@ -1,46 +1,22 @@
-import {
-	Container,
-	Center,
-	VStack,
-	Heading,
-	Highlight,
-	Text,
-	ButtonGroup,
-	Button
-} from "@chakra-ui/react"
-import { useNavContext } from "@/contexts/navContext/NavContext.jsx"
+import { Container, Center, Button, Heading, VStack, Text, ButtonGroup, Highlight } from "@chakra-ui/react"
+
 
 export default function Landing() {
-	const { projectsRef, contactRef, scrollToRef } = useNavContext()
-
 	return (
-		<Container
-			h="100vh"
-			maxH="700x"
-			py={{ base: 4, md: 6, lg: 8 }}
-		>
-			<Center h="full" bg="bg.panel" px="2">
-				<VStack maxW="2xl" gap="4">
-					<Heading
-						as="h1"
-						size={{ base: "xl", md: "2xl" }}
-						fontWeight="medium"
-					>
-						<Highlight
-							ignoreCase
-							query="bastien winant"
-							styles={{ color: "blue.600" }}
-						>
+		<Container height="100vh">
+			<Center h="full" borderWidth="thin">
+				<VStack textAlign="center">
+					<Heading as="h1" size="2xl">
+						<Highlight ignoreCase query="bastien winant" styles={{ color: "teal.600" }}>
 							Hi, I'm Bastien Winant
 						</Highlight>
-						</Heading>
-					<Text textAlign="center">
-						Passionate about building clean, user-friendly web applications.
-						I love turning ideas into reality through code and creating experiences that make a difference.
+					</Heading>
+					<Text mb="3" fontSize="md" color="fg.muted">
+						PayMe helps startups get paid by anyone, anywhere in the world
 					</Text>
-					<ButtonGroup mt="4">
-						<Button w="32" onClick={() => scrollToRef(projectsRef)}>view my work</Button>
-						<Button w="32" onClick={() => scrollToRef(contactRef)} variant="outline">get in touch</Button>
+					<ButtonGroup size="sm">
+						<Button variant="solid" w="32">View My Work</Button>
+						<Button variant="subtle" w="32">Get In Touch</Button>
 					</ButtonGroup>
 				</VStack>
 			</Center>

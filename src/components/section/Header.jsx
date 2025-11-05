@@ -4,9 +4,7 @@ export default function Header({ children }) {
 	return (
 		<Container>
 			<Center>
-				<Heading as="h2" textTransform="capitalize">
-					{children}
-				</Heading>
+				<Heading as="h2">{children}</Heading>
 			</Center>
 		</Container>
 	)
