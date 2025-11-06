@@ -1,7 +1,7 @@
 import { Stack } from "@chakra-ui/react"
 
-export default function Section({children}) {
+export default function Section({ ref, children }) {
 	return (
-		<Stack borderWidth="thin">{ children }</Stack>
+		<Stack py="32" gap="12" ref={ref}>{ children }</Stack>
 	)
 }

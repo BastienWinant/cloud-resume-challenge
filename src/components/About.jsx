@@ -6,7 +6,7 @@ export default function About() {
 		<Section>
 			<Section.Header>about me</Section.Header>
 			<Section.Body>
-				<Stack>
+				<Stack maxW="3xl" mx="auto" gap="8">
 					<Text>
 						I'm a recent graduate with a degree in Computer Science, eager to start my career in web development.
 						During my studies, I discovered my passion for creating intuitive and responsive user interfaces.

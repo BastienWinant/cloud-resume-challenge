@@ -6,7 +6,7 @@ export const NavContextProvider = ({children}) => {
 	const contactRef = useRef(null)
 	const projectsRef = useRef(null)
 
-	const scrollToRef = (ref) => {
+	const scrollToRef = ref => {
 		ref.current.scrollIntoView({
 			behavior: "smooth",
 			block: "start"
