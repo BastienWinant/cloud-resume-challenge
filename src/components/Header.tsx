@@ -8,7 +8,7 @@ export default function Header() {
 		location.pathname.startsWith("/about") ? "/" : "/about"
 
 	return (
-		<header className="h-[17em] md:h-72 lg:h-96 text-xl lg:text-2xl capitalize">
+		<header className="h-[11.5em] lg:h-[10em] text-xl lg:text-2xl capitalize">
 			<Container className="py-5 flex items-start justify-between">
 				<hgroup>
 					<h1 className="font-medium">bastien winant,</h1>
