@@ -11,7 +11,7 @@ export default function Layout() {
 			"bg-background text-primary"
 		)}>
 			<Header />
-			<div className="h-full px-2 md:px-0">
+			<div className="h-full px-3 md:px-0">
 				<Container className="grid grid-cols-1 grid-rows-[auto_1fr] md:grid-cols-[300px_1fr] md:grid-rows-1 md:gap-x-12 lg:grid-cols-[360px_1fr]">
 					<Aside />
 					<main className="h-full py-8 border-t-2 border-t-secondary/20">

@@ -1,7 +1,7 @@
 export default function Aside() {
 	return (
-		<aside className="py-8 xl:px-2 flex flex-col gap-24 border-t-2 border-t-secondary/20 font-light">
-			<p className="text-sm xl:text-base w-[80%] max-w-md md:w-[85%]">
+		<aside className="py-8 xl:px-1 flex flex-col gap-20 border-t-2 border-t-secondary/20 font-light">
+			<p className="text-sm xl:text-base w-[85%] max-w-md">
 				A seasoned Senior Producer with 10+ years of experience, I excel in leading complex marketing and design projects from concept to completion.
 			</p>
 			<nav className="flex flex-col text-xs">
