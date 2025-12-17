@@ -7,7 +7,7 @@ export default function Aside() {
 			<nav className="flex flex-col text-xs">
 				<a
 					className="border-t border-t-secondary/20 py-3 px-1 xl:px-2 hover:bg-primary hover:text-background"
-					href="mailto:m.bluth@example.com"
+					href="mailto:bastien.winant@gmail.com"
 				>bastien.winant@gmail.com</a>
 				<a
 					className="border-t border-t-secondary/20 py-3 px-1 xl:px-2 hover:bg-primary hover:text-background"
