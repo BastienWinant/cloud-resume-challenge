@@ -4,7 +4,7 @@ import Achievement from "../components/resume/Achievement.tsx"
 
 export default function Index() {
 	return (
-		<section>
+		<section className="flex flex-col gap-8">
 			<Section title="experience">
 				<div className="flex flex-col gap-12">
 					<Experience

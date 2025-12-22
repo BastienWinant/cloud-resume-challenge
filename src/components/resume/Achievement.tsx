@@ -1,13 +1,12 @@
 import type { ReactNode } from "react"
 
 export type AchievementProps = {
-	className?: string
 	children: ReactNode
 }
 
-export default function Achievement({className, children}:AchievementProps) {
+export default function Achievement({children}:AchievementProps) {
 	return (
-		<li className={className}>
+		<li className="max-w-[95%]">
 			{children}
 		</li>
 	)

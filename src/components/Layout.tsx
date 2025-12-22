@@ -8,7 +8,7 @@ export default function Layout() {
 	return (
 		<div className={clsx(
 			"min-h-screen flex flex-col",
-			"bg-background text-primary"
+			"bg-background text-primary font-light"
 		)}>
 			<Header />
 			<div className="h-full px-3 md:px-0">

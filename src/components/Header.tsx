@@ -12,7 +12,7 @@ export default function Header() {
 			<Container className="py-5 flex items-start justify-between">
 				<hgroup>
 					<h1 className="font-medium">bastien winant,</h1>
-					<p className="font-light text-secondary">front-end developer</p>
+					<p className="text-secondary">front-end developer</p>
 				</hgroup>
 				<NavLink className="font-medium focus:outline-none" to={dynamicTarget}>
 					{dynamicTarget === "/about" ? "About" : "Back"}
