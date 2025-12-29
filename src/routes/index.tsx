@@ -64,7 +64,34 @@ export default function Index() {
 				</div>
 			</Section>
 			<Section title="skills">
-				this are my skills
+				<div className="flex flex-wrap gap-20 text-sm capitalize">
+					<section>
+						<header className="text-secondary mb-4">Communication & Collaboration</header>
+						<ul className="list-disc list-inside flex flex-col gap-1">
+							<li>Cross-Functional Team Leadership</li>
+							<li>Client Relationship Management</li>
+							<li>Stakeholder Communication</li>
+						</ul>
+					</section>
+					<section>
+						<header className="text-secondary mb-4">project management</header>
+						<ul className="list-disc list-inside flex flex-col gap-1">
+							<li>Budget Management & Forecasting</li>
+							<li>Timeline Development & Execution</li>
+							<li>Vendor & Contract Negotiation</li>
+							<li>On-Site Production Management</li>
+						</ul>
+					</section>
+					<section>
+						<header className="text-secondary mb-4">strategic & creative oversight</header>
+						<ul className="list-disc list-inside flex flex-col gap-1">
+							<li>Creative Strategy Development</li>
+							<li>Talent Relations & Management</li>
+							<li>Creative Direction Oversight</li>
+							<li>Brand Alignment</li>
+						</ul>
+					</section>
+				</div>
 			</Section>
 			<Section title="education">
 				<div className="grid grid-rows-1 grid-cols-2 gap-6">
