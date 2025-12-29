@@ -67,7 +67,15 @@ export default function Index() {
 				this are my skills
 			</Section>
 			<Section title="education">
-				this are my skills
+				<div className="grid grid-rows-1 grid-cols-2 gap-6">
+					<div>
+						University of California, Los Angeles (UCLA)
+					</div>
+					<div>
+						<p>Bachelor of Fine Arts in Graphic Design</p>
+						<p className="text-secondary">Minor: Studio Photography</p>
+					</div>
+				</div>
 			</Section>
 		</section>
 	)
