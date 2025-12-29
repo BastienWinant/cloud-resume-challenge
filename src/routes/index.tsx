@@ -64,7 +64,7 @@ export default function Index() {
 				</div>
 			</Section>
 			<Section title="skills">
-				<div className="flex flex-wrap gap-20 text-sm capitalize">
+				<div className="flex flex-wrap gap-16 text-sm capitalize">
 					<section>
 						<header className="text-secondary mb-4">Communication & Collaboration</header>
 						<ul className="list-disc list-inside flex flex-col gap-1">
@@ -96,11 +96,11 @@ export default function Index() {
 			<Section title="education">
 				<div className="grid grid-rows-1 grid-cols-2 gap-6">
 					<div>
-						University of California, Los Angeles (UCLA)
+						University of London, Goldsmiths
 					</div>
 					<div>
-						<p>Bachelor of Fine Arts in Graphic Design</p>
-						<p className="text-secondary">Minor: Studio Photography</p>
+						<p>Bachelor of Science in Computer Science</p>
+						<p className="text-secondary">Focus: Data Science</p>
 					</div>
 				</div>
 			</Section>
