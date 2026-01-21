@@ -11,10 +11,10 @@ export default function Layout() {
 			"bg-background text-primary font-light"
 		)}>
 			<Header />
-			<div className="h-full px-3 md:px-0">
+			<div className="h-screen px-3 md:px-0 border-2 border-amber-600">
 				<Container className="grid grid-cols-1 grid-rows-[auto_1fr] md:grid-cols-[300px_1fr] md:grid-rows-1 md:gap-x-12 lg:grid-cols-[360px_1fr]">
 					<Aside />
-					<main className="h-full py-8 border-t-2 border-t-secondary/20">
+					<main className="h-full overflow-y-scroll py-8 border-t-2 border-t-secondary/20">
 						<Outlet />
 					</main>
 				</Container>
