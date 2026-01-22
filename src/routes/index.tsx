@@ -12,30 +12,6 @@ export default function Index() {
 			<Section header="education">
 				this is the education section
 			</Section>
-			{/*<section>*/}
-			{/*	<header>*/}
-			{/*		<h2 className="capitalize">experience</h2>*/}
-			{/*	</header>*/}
-			{/*	<div>*/}
-
-			{/*	</div>*/}
-			{/*</section>*/}
-			{/*<section>*/}
-			{/*	<header>*/}
-			{/*		<h2 className="capitalize">skills</h2>*/}
-			{/*	</header>*/}
-			{/*	<div>*/}
-
-			{/*	</div>*/}
-			{/*</section>*/}
-			{/*<section>*/}
-			{/*	<header>*/}
-			{/*		<h2 className="capitalize">education</h2>*/}
-			{/*	</header>*/}
-			{/*	<div>*/}
-
-			{/*	</div>*/}
-			{/*</section>*/}
 		</div>
 	)
 }

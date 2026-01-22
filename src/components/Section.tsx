@@ -7,9 +7,9 @@ type SectionProps = {
 
 export default function Section({children, header}:SectionProps) {
 	return (
-		<section className="border-t">
+		<section className="flex flex-col gap-y-10 py-7 border-t border-zinc-100/20">
 			<header>
-				<h2 className="capitalize">{header}</h2>
+				<h2 className="capitalize text-xs font-medium">{header}</h2>
 			</header>
 			<div>{children}</div>
 		</section>
