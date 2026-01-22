@@ -5,10 +5,10 @@ export default function Header() {
 	const dynamicTarget = location.pathname.startsWith("/about") ? "/" : "/about"
 
 	return (
-		<header className="md:col-span-2 flex items-start justify-between capitalize border-2 border-gray-900">
+		<header className="md:col-span-2 flex items-start justify-between capitalize font-medium text-lg">
 			<hgroup>
 				<h1>alexandra moore,</h1>
-				<p>senior producer</p>
+				<p className="font-light text-zinc-400">senior producer</p>
 			</hgroup>
 
 			<NavLink
