@@ -1,22 +1,44 @@
 import Section from "../components/Section"
+import Experience from "../components/Experience"
 
 export default function Index() {
 	return (
 		<div className="flex flex-col">
 			<Section header="experience">
-				<div className="flex flex-col lg:flex-row py-5 border-t border-zinc-100/20 text-sm lg:text-base">
-					<div className="flex flex-col gap-y-3">
-						<p className="capitalize font-medium">senior producer</p>
-						<ul className="text-zinc-400">
-							<li>Creative Agency XYZ</li>
-							<li className="capitalize">June 2022 – Present</li>
-							<li className="capitalize">Remote & New York, NY</li>
-						</ul>
-					</div>
-					<ul className="list-disc flex flex-col gap-2">
-						<li>Seamlessly facilitate diverse creative experiences: from immersive installations to cinematic narratives. A catalyst for collaboration across all mediums.</li>
-						<li>Clients include: Lunethra, Driftwell, Clyra, Forgekind and more.</li>
-					</ul>
+				<div className="flex flex-col gap-y-10">
+					<Experience
+						title="senior producer"
+						company="Creative Agency XYZ"
+						dates="June 2022 – Present"
+						location="Remote & New York, NY"
+						accomplishments={[
+							'Seamlessly facilitate diverse creative experiences: from immersive installations to cinematic narratives. A catalyst for collaboration across all mediums.',
+							'Clients include: Lunethra, Driftwell, Clyra, Forgekind and more.'
+						]}
+					/>
+					<Experience
+						title="senior producer"
+						company="Pixel Studios"
+						dates="December 2021 - June 2022"
+						location="New York, NY"
+						accomplishments={[
+							'Orchestrated the creation of integrated video, motion, and photo content for multi-platform marketing campaigns, ensuring seamless execution and brand alignment.',
+							'Directed all phases of production operations (pre-production, production, post-production), meticulously managing budgets, contracts, and legal requirements to deliver projects on time and within quality standards.',
+							'Strategically developed and managed production schedules, creative strategies, and talent relations, optimizing resources to deliver high-quality content within budget parameters.',
+							'Clients include: Nestive, Zentrox, Pollenate, Vireo and more.'
+						]}
+					/>
+					<Experience
+						title="content producer"
+						company="Creative Hub Studio"
+						dates="October 2016 - March 2018"
+						location="Los Angeles, CA"
+						accomplishments={[
+							'Facilitated clear and efficient communication across cross-functional teams (Marketing, Brand, Creative, IT, QA), ensuring seamless collaboration and project alignment.',
+							'Proactively identified and integrated industry trends, emerging technologies, and cultural insights to enhance creative output and maintain brand relevance.',
+							'Clients include: Lunethra, Forgekind and more.'
+						]}
+					/>
 				</div>
 			</Section>
 			<Section header="skills">
