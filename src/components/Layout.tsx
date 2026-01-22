@@ -1,24 +1,19 @@
-import Header from "../components/Header"
-import Container from "./Container"
-import Aside from "./Aside"
 import { Outlet } from "react-router"
-import clsx from "clsx"
+import Header from "./Header"
+import Aside from "./Aside"
 
 export default function Layout() {
 	return (
-		<div className={clsx(
-			"min-h-screen flex flex-col",
-			"bg-background text-primary font-light"
-		)}>
+		<div className="min-h-dvh grid auto-rows-min grid-cols-1 md:grid-cols-[320px_1fr] lg:grid-cols-[400px_1fr]">
 			<Header />
-			<div className="h-screen px-3 md:px-0 border-2 border-amber-600">
-				<Container className="grid grid-cols-1 grid-rows-[auto_1fr] md:grid-cols-[300px_1fr] md:grid-rows-1 md:gap-x-12 lg:grid-cols-[360px_1fr]">
-					<Aside />
-					<main className="h-full overflow-y-scroll py-8 border-t-2 border-t-secondary/20">
-						<Outlet />
-					</main>
-				</Container>
-			</div>
+			<Aside />
+			<main className="flex flex-col justify-between gap-y-24 border-2 border-gray-900">
+				<Outlet />
+				<a
+					className="self-start"
+					href="mailto:bastien.winant@gmail.com"
+				>Contact me</a>
+			</main>
 		</div>
 	)
 }

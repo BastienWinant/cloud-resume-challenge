@@ -1,16 +1,1 @@
 @import "tailwindcss";
-
-@font-face {
-	font-family: 'Google';
-	src: url('./assets/fonts/Google_Sans_Flex/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf') format('truetype');
-	font-style: normal;
-}
-
-@theme {
-	--color-background: oklch(14.5% 0 0);
-	--color-primary: oklch(97% 0 0);
-	--color-secondary: oklch(70.8% 0 0);
-
-	--text-sm: 15px;
-	--font-sans: Google, Inter, serif;
-}

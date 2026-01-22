@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router"
-import Layout from "./components/Layout";
-import Index from "./routes/index"
+import Layout from "./components/layout"
+import Index from "./routes"
 import About from "./routes/about"
 import './index.css'
 
@@ -12,10 +12,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Index /> },
-      { path: "about", element: <About />},
-    ],
+      { path: "about", element: <About /> }
+    ]
   },
-])
+]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
