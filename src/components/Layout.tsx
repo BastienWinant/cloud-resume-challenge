@@ -8,12 +8,12 @@ export default function Layout() {
 		<div
 			className={clsx(
 				"min-h-dvh grid auto-rows-min grid-cols-1 md:grid-cols-[380px_1fr] gap-x-8",
-				"p-5 md:p-7 pb-7 bg-zinc-950 text-zinc-100 font-light"
+				"p-5 md:px-7 pb-7 bg-zinc-950 text-zinc-100 font-light select-none"
 			)}
 		>
 			<Header />
 			<Aside />
-			<main className="flex flex-col justify-between gap-y-24 mx-3">
+			<main className="flex flex-col justify-between gap-y-48 mx-3">
 				<Outlet />
 				<a
 					className="self-start font-medium text-xl"
