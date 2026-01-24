@@ -1,5 +1,6 @@
 import Section from "../components/Section"
 import Experience from "../components/Experience"
+import SkillsList from "../components/SkillsList"
 
 export default function Index() {
 	return (
@@ -42,7 +43,26 @@ export default function Index() {
 				</div>
 			</Section>
 			<Section header="skills">
-				this is the skills section
+				<div className="flex items-start justify-between flex-wrap gap-x-12 gap-y-10">
+					<SkillsList
+						category="product management"
+						skills={[
+							'Budget Management & Forecasting', 'Timeline Development & Execution', 'Vendor & Contract Negotiation', 'On-Site Production Management'
+						]}
+					/>
+					<SkillsList
+						category="Strategic & Creative Oversight "
+						skills={[
+							'Creative Strategy Development', 'Talent Relations & Management', 'Creative Direction Oversight', 'Brand Alignment'
+						]}
+					/>
+					<SkillsList
+						category="Communication & Collaboration"
+						skills={[
+							'Cross-Functional Team Leadership', 'Client Relationship Management', 'Stakeholder Communication'
+						]}
+					/>
+				</div>
 			</Section>
 			<Section header="education">
 				<div className="grid grid-rows-1 grid-cols-2 gap-x-10">
