@@ -2,16 +2,18 @@ import type { ReactNode } from "react"
 
 type SectionProps = {
 	children: ReactNode
-	header: string
+	title: string
 }
 
-export default function Section({children, header}:SectionProps) {
+export default function Section({children, title}:SectionProps) {
 	return (
-		<section className="flex flex-col gap-y-10 py-7 border-t-2 border-zinc-100/10">
+		<section className="py-7 flex flex-col gap-y-10 border-t-2 border-zinc-400/20">
 			<header>
-				<h2 className="capitalize text-xs font-medium">{header}</h2>
+				<h2 className="text-xs font-medium capitalize">{title}</h2>
 			</header>
-			<div>{children}</div>
+			<div className="flex flex-col gap-y-7 w-[95%] md:w-[90%] lg:w-[95%] max-w-[42em]">
+				{children}
+			</div>
 		</section>
 	)
 }
