@@ -11,7 +11,7 @@ export default function Section({children, title}:SectionProps) {
 			<header>
 				<h2 className="text-xs font-medium capitalize">{title}</h2>
 			</header>
-			<div className="flex flex-col gap-y-7 w-[95%] md:w-[90%] lg:w-[95%] max-w-[42em]">
+			<div className="flex flex-col gap-y-7">
 				{children}
 			</div>
 		</section>

@@ -18,7 +18,7 @@ export default function Experience({title, company, start, end, location, accomp
 					<li>{location}</li>
 				</ul>
 			</div>
-			<ul className="list-disc flex flex-col gap-y-2 max-w-[32em] lg:max-w-[48em]">
+			<ul className="list-disc flex flex-col gap-y-2">
 				{accomplishments.map(accomplishment => <li>{accomplishment}</li>)}
 			</ul>
 		</div>
