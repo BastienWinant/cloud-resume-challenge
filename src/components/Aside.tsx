@@ -1,22 +1,25 @@
+import clsx from "clsx";
+
 export default function Aside() {
 	return (
-		<aside className="self-start md:sticky top-0 mx-3 py-7 border-t-2 border-zinc-400/20 flex flex-col gap-y-20">
-			<p className="w-[85%] max-w-[28em]">
+		<aside className={clsx(
+			"md:sticky md:top-0 self-start mx-3 md:mx-0 pt-7 pb-5 flex flex-col gap-20 border-t border-stone-400/30"
+		)}>
+			<p className="w-[90%] max-w-[28em] md:w-[85%]">
 				A seasoned Senior Producer with 10+ years of experience,
 				I excel in leading complex marketing and design projects from concept to completion.
 			</p>
-			<nav className="flex flex-col text-xs lg:text-xs-lg">
+			<nav className="flex flex-col text-xs">
 				<a
+					className="px-2 py-3 border-t border-stone-400/20 hover:bg-stone-100 hover:text-stone-950"
 					href="mailto:bastien.winant@gmail.com"
-					className="px-1.5 py-3 border-t border-zinc-400/20 hover:bg-zinc-100 hover:text-zinc-950"
 				>hello@figma.com</a>
 				<p
-					className="px-1.5 py-3 border-t border-zinc-400/20 hover:bg-zinc-100 hover:text-zinc-950"
-				>+352 691 223-827</p>
+					className="px-2 py-3 border-t border-stone-400/20 hover:bg-stone-100 hover:text-stone-950"
+				>(555) 123-4567</p>
 				<a
-					href="https://www.xing.com/profile/Bastien_Winant"
-					target="_blank"
-					className="px-1.5 py-3 border-t border-zinc-400/20 hover:bg-zinc-100 hover:text-zinc-950"
+					className="px-2 py-3 border-t border-stone-400/20 hover:bg-stone-100 hover:text-stone-950"
+					href="https://github.com/BastienWinant"
 				>Linkedin</a>
 			</nav>
 		</aside>

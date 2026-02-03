@@ -1,13 +1,13 @@
 import type { ReactNode } from "react"
 
 type SectionProps = {
-	children: ReactNode
 	title: string
+	children: ReactNode
 }
 
-export default function Section({children, title}:SectionProps) {
+export default function Section({title, children}:SectionProps) {
 	return (
-		<section className="py-7 flex flex-col gap-y-10 border-t-2 border-zinc-400/20">
+		<section className="py-7 flex flex-col gap-y-9 border-t border-stone-400/40">
 			<header>
 				<h2 className="text-xs font-medium capitalize">{title}</h2>
 			</header>
