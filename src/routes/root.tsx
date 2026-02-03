@@ -13,7 +13,7 @@ export default function Root() {
 			<Aside />
 			<main className="mx-3 md:mx-0 flex flex-col gap-64">
 				<Outlet />
-				<a className="text-xl font-semibold mb-1.5" href="mailto:bastien.winant@gmail.com">Contact me</a>
+				<a className="text-xl xl:text-2xl font-medium mb-1.5" href="mailto:bastien.winant@gmail.com">Contact me</a>
 			</main>
 		</div>
 	)
