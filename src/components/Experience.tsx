@@ -9,7 +9,7 @@ type ExperienceProps = {
 
 export default function Experience({title, company, start, end, location, accomplishments}:ExperienceProps) {
 	return (
-		<div className="py-5 flex flex-col gap-y-7 border-t border-stone-100/20">
+		<div className="py-5 grid grid-cols-1 auto-rows-min gap-y-7 xl:grid-cols-2 border-t border-stone-100/20">
 			<div className="flex flex-col gap-y-3">
 				<h3 className="font-medium capitalize">{title}</h3>
 				<ul className="text-stone-400">
