@@ -7,7 +7,7 @@ export default function Root() {
 	return (
 		<div className={clsx(
 			"min-h-dvh grid grid-cols-1 auto-rows-min md:grid-cols-[360px_1fr] gap-x-12 p-5 md:px-7",
-			"text-stone-100 text-base"
+			"text-stone-100 text-small xl:text-base"
 		)}>
 			<Header />
 			<Aside />
