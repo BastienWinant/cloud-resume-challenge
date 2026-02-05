@@ -50,12 +50,26 @@ export default function Index() {
 				/>
 			</Section>
 			<Section title="projects">
-				<Project
-					title="color scheme generator"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla dolor sapien, eget maximus neque venenatis nec."
-					techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
-					githubLink="https://github.com/BastienWinant"
-				/>
+				<div className="grid auto-rows-min grid-cols-[repeat(auto-fill,minmax(18em,1fr))] gap-5">
+					<Project
+						title="color scheme generator"
+						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla dolor sapien, eget maximus neque venenatis nec."
+						techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
+						githubLink="https://github.com/BastienWinant"
+					/>
+					<Project
+						title="color scheme generator"
+						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla dolor sapien, eget maximus neque venenatis nec."
+						techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
+						githubLink="https://github.com/BastienWinant"
+					/>
+					<Project
+						title="color scheme generator"
+						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla dolor sapien, eget maximus neque venenatis nec."
+						techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
+						githubLink="https://github.com/BastienWinant"
+					/>
+				</div>
 			</Section>
 			<Section title="skills">
 				<div className="flex flex-wrap gap-x-20 gap-y-9">

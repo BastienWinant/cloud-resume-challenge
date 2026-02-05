@@ -8,7 +8,7 @@ type ProjectProps = {
 
 export default function Project({title, description, techstack, githubLink, demoLink}: ProjectProps) {
 	return (
-		<article className="p-5 flex flex-col gap-y-3 border border-stone-400/20 rounded-sm max-w-96">
+		<article className="p-5 flex flex-col gap-y-3 border border-stone-400/20">
 			<header>
 				<h4 className="text-lg font-medium capitalize">{title}</h4>
 			</header>
