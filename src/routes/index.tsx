@@ -1,6 +1,7 @@
 import Section from "../components/Section"
 import Experience from "../components/Experience"
 import Skills from "../components/Skills"
+import Project from "../components/Project"
 
 export default function Index() {
 	return (
@@ -46,6 +47,13 @@ export default function Index() {
 						enhance creative output and maintain brand relevance.`,
 						`Clients include: Lunethra, Forgekind and more.`
 					]}
+				/>
+			</Section>
+			<Section title="projects">
+				<Project
+					title="color scheme generator"
+					description=""
+					techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
 				/>
 			</Section>
 			<Section title="skills">
