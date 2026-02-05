@@ -7,8 +7,8 @@ export default function Header() {
 	return (
 		<header className="h-52 xl:h-56 md:col-span-2 flex items-start justify-between text-xl capitalize xl:text-2xl">
 			<hgroup>
-				<h1 className="font-medium">alexandra moore,</h1>
-				<p className="text-stone-400">senior producer</p>
+				<h1 className="font-medium">bastien winant,</h1>
+				<p className="text-stone-400">data engineer</p>
 			</hgroup>
 			<NavLink to={dynamicTarget} className="font-medium">
 				{dynamicTarget === "/about" ? "about" : "back"}

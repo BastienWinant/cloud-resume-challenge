@@ -13,14 +13,14 @@ export default function Aside() {
 				<a
 					className="px-2 py-3 border-t border-stone-100/20 hover:bg-stone-100 hover:text-stone-950"
 					href="mailto:bastien.winant@gmail.com"
-				>hello@figma.com</a>
+				>bastien.winant@gmail.com</a>
 				<p
 					className="px-2 py-3 border-t border-stone-100/20 hover:bg-stone-100 hover:text-stone-950"
 				>(555) 123-4567</p>
 				<a
 					className="px-2 py-3 border-t border-stone-100/20 hover:bg-stone-100 hover:text-stone-950"
 					href="https://github.com/BastienWinant"
-				>Linkedin</a>
+				>Github</a>
 			</nav>
 		</aside>
 	)

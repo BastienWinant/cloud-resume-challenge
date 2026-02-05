@@ -52,8 +52,9 @@ export default function Index() {
 			<Section title="projects">
 				<Project
 					title="color scheme generator"
-					description=""
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla dolor sapien, eget maximus neque venenatis nec."
 					techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
+					githubLink="https://github.com/BastienWinant"
 				/>
 			</Section>
 			<Section title="skills">
@@ -88,10 +89,11 @@ export default function Index() {
 			</Section>
 			<Section title="education">
 				<div className="grid grid-cols-2 gap-x-9">
-					<p>University of California, Los Angeles (UCLA)</p>
+					<p>University of London, Goldsmiths</p>
 					<div>
-						<p>Bachelor of Fine Arts in Graphic Design</p>
-						<p className="text-stone-400">Minor: Studio Photography</p>
+						{/*<p>Bachelor of Fine Arts in Graphic Design</p>*/}
+						<p>Bachelor's in Computer Science</p>
+						<p className="text-stone-400">Focus: Data Science</p>
 					</div>
 				</div>
 			</Section>
