@@ -60,7 +60,7 @@ export default function Index() {
 					<Project
 						title="color scheme generator"
 						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla dolor sapien, eget maximus neque venenatis nec."
-						techstack={['React', 'Firebase Realtime Database', 'Firebase Authentication', 'Chakra UI']}
+						techstack={['NextJS', 'Supabase', 'MapBox']}
 						githubLink="https://github.com/BastienWinant"
 					/>
 					<Project
