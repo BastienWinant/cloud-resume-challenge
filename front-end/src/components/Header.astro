@@ -1,0 +1,17 @@
+---
+import profileImg from "../assets/profile.png"
+---
+
+<header class="flex gap-4 items-center mb-16">
+	<img
+		src={profileImg.src}
+		alt="Profile image."
+		fetchpriority="high"
+		class="h-24 w-24 object-cover object-center rounded-full"
+	/>
+	<section>
+		<h1 class="text-lg">Basty Winant</h1>
+		<p class="text-stone-500 mb-2">Full-Stack Developer</p>
+		<span class="text-xs bg-stone-100 text-stone-500 px-2.5 py-1 rounded-xl">visit count: 28</span>
+	</section>
+</header>

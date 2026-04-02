@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header.astro';
+import "../styles/global.css";
+import Container from "../components/Container.astro";
+import Section from "../components/Section.astro";
 ---
 
 <Layout>
-	<Welcome />
+	<Container>
+		<Header />
+		<main class="flex flex-col gap-12">
+			<Section title="about">
+				<p>
+					I’m a passionate UX designer striving to create intuitive and engaging experiences.
+					I’m a big believer that things can always be simpler than we think.
+				</p>
+			</Section>
+			<Section title="projects">
+				<p>this is the projects section</p>
+			</Section>
+			<Section title="certifications">
+				<p>this is the certifications section</p>
+			</Section>
+			<Section title="contact">
+				<p>this is the contact section</p>
+			</Section>
+		</main>
+	</Container>
 </Layout>
