@@ -2,4 +2,7 @@
 
 @theme {
 	--text-base: .875rem;
+	--color-bg-primary: oklch(96.6% 0.005 106.5);
+	--color-primary: oklch(28.6% 0.016 107.4);
+	--color-secondary: oklch(46.6% 0.025 107.3);
 }
