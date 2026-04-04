@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Container from "../components/Container.astro";
 import Section from "../components/Section.astro";
+import Project from '../components/Project.astro';
 ---
 
 <Layout>
@@ -16,7 +17,24 @@ import Section from "../components/Section.astro";
 				</p>
 			</Section>
 			<Section title="projects">
-				<p>this is the projects section</p>
+				<div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
+					<Project
+						demoLink="https://github.com/BastienWinant"
+						description="This is the first project"
+						githubLink="https://github.com/BastienWinant"
+						imgUrl="https://images.unsplash.com/photo-1774677784803-fe0f6c9ce4ae"
+						name="project 1"
+					/>
+				</div>
+				<div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
+					<Project
+						demoLink="https://github.com/BastienWinant"
+						description="This is the second project"
+						githubLink="https://github.com/BastienWinant"
+						imgUrl="https://images.unsplash.com/photo-1774677784803-fe0f6c9ce4ae"
+						name="project 2"
+					/>
+				</div>
 			</Section>
 			<Section title="certifications">
 				<p>this is the certifications section</p>

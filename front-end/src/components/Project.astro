@@ -12,4 +12,12 @@ const {name, description, imgUrl, demoLink, githubLink} = Astro.props
 
 <article>
 	<img src={imgUrl} alt="Project screenshot." />
+	<div class="p-2 flex flex-col gap-y-2">
+		<h3>{name}</h3>
+		<p>{description}</p>
+		<div class="flex">
+			<a href={demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
+			<a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+		</div>
+	</div>
 </article>
