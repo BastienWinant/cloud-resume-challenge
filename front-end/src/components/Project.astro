@@ -10,12 +10,12 @@ interface Props {
 const {name, description, imgUrl, demoLink, githubLink} = Astro.props
 ---
 
-<article class="overflow-hidden rounded-sm bg-olive-50 shadow-2xs inline">
+<article class="overflow-hidden rounded-sm bg-olive-50 shadow-2xs">
 	<img src={imgUrl} alt="Project screenshot." class="max-w-full" />
-	<div class="p-2 flex flex-col gap-y-2">
+	<div class="p-3 flex flex-col gap-y-2">
 		<h3>{name}</h3>
 		<p>{description}</p>
-		<div class="flex">
+		<div class="flex gap-2">
 			<a href={demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
 			<a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
 		</div>
