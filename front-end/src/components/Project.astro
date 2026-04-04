@@ -1,0 +1,15 @@
+---
+interface Props {
+	name: string
+	description: string
+	imgUrl: string
+	demoLink: string
+	githubLink: string
+}
+
+const {name, description, imgUrl, demoLink, githubLink} = Astro.props
+---
+
+<article>
+	<img src={imgUrl} alt="Project screenshot." />
+</article>
